@@ -1,0 +1,8 @@
+#!/bin/bash
+#JBoss attack to 10.0.6.2 in HoneyNet 1
+
+echo "which IP to target for jboss attack?"
+
+read target
+
+msfconsole
