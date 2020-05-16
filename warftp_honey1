@@ -1,0 +1,14 @@
+#!/bin/bash
+#Warftp attack to 10.0.23.10 in HoneyNet 1
+
+
+#HoneyNet1###
+##WARFTP V1.65 10.0.23.10
+
+echo "which IP to target for the warftp attack?"
+
+read target
+
+nmap -n -T4 -sV -p 21 $target
+
+msfconsole
