@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+nmap 10.0.0.0/24
+
+nmap 10.0.1,4,6,23,16,12,11.0-255 -T4 -n
+
+
+echo "which IP to target for the ssh pivoting attack?"
+
+read target
+
+msfconsole
