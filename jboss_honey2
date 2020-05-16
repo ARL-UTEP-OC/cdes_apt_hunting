@@ -1,0 +1,12 @@
+#!/bin/bash
+#10.0.6.2 honey2
+
+#nmap 10.0.0.0/24
+
+nmap 10.0.12.0-255 -T4 -n
+
+echo "which IP to target for the ssh pivoting attack?"
+
+read target
+
+msfconsole
